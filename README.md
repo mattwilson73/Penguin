@@ -1,28 +1,9 @@
-## System Requirements
-- Latest LTS version of Node
-- Java 8
 
-## Getting Started
 
-Clone this repo `git clone https://github.com/TopBloc/code-challenge.git`
+## TopBloc Coding Challenge - Matthew Wilson
 
-Run the frontend code within the `/client` folder:
+I had some issues accessing the `/server/resources` folder. Calling `getResource()` on the filename was always returning null no matter how I tried to open it. May have been an issue in my environment. 
 
-```bash
-cd client
-npm install
-npm run start
-```
+I ended up moving the excel files to `/server/src/main/resources` as this structure is what I saw online as common structure for Maven projects when looking for a solution.
 
-After running previous commands, you should see a website with instructions at `http://localhost:3000`.
-
-Open the `/server` folder as a Maven project within a Java IDE and run the project. We suggest using IntelliJ IDEA.
-
-## Submission
-
-1. Create a new repository within GitHub and name it as your favorite animal (ex. Sloth, Zebra)
-2. Set the remote origin of this cloned project to your newly created GitHub repository:
-```
-git remote set-url --push origin https://github.com/<github_username>/<favorite_animal>
-```
-3. Push your completed code challenge!
+If there is a proper solution to accessing the files in the original location please let me know.
